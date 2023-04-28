@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/filme"
+    android:orientation="vertical"
     tools:context=".MovieActivity">
 
 
@@ -13,8 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="#FFF"
         android:text="Moviens"
+        android:textColor="#FFF"
         android:textSize="60sp"
         android:textStyle="bold" />
 
@@ -22,35 +22,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textColor="#FFF"
-        android:text="INTERACT WITH YOUR DEMONS" />
+        android:text="INTERACT WITH YOUR DEMONS"
+        android:textColor="#FFF" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/idMail"
-        android:padding="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
-        app:endIconMode="clear_text"
+        android:padding="20sp"
+        android:textColorHint="@color/white"
         app:counterTextColor="#FFFF"
+        app:endIconMode="clear_text"
         app:startIconContentDescription="username"
-        app:startIconDrawable="@drawable/baseline_face"
-        >
+        app:startIconDrawable="@drawable/baseline_face">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/walle"/>
+            android:textColorHighlight="@color/white"
+
+        "/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/idPass"
-        android:padding="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:padding="20sp"
+        android:textColorHint="@color/white"
         app:startIconContentDescription="Password"
         app:startIconDrawable="@drawable/baseline_key">
 
@@ -62,17 +65,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#FF8400"
         android:text="SIGN IN">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="OR"
-            android:gravity="center"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="OR"
+        android:textColor="@color/black"
 
     <Button
 
@@ -81,13 +86,13 @@
         android:backgroundTint="#3b5998"
         android:text="Sign in with Facebook">
 
-        <TextView
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Don´t have an account yet? Sign Up"
-            android:gravity="center"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Don´t have an account yet? Sign Up"
+        android:textColor="@color/white"
 
 
 </LinearLayout>
