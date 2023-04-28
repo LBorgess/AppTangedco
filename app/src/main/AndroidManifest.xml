@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppTangedco"
         tools:targetApi="31">
         <activity
+            android:name=".MovieActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
